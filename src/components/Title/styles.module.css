@@ -27,17 +27,14 @@
     margin-bottom: 8px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px) {
     .h1 {
-        font-size: 38px;
-        line-height: 42px;
+        font-size: 42px;
+        line-height: 46px;
     }
     .h2 {
         font-size: 36px;
         line-height: 42px;
-    }
-    .h3 {
-        text-align: left;
     }
 }
 

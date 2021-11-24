@@ -38,8 +38,8 @@ const Index: NextPage<PageProps> = props => {
                 <span id='whatis' />
                 <WhatIs />
     
-                <span id='about' />
-                <About />
+                {/* <span id='about' />
+                <About /> */}
     
             </ParallaxProvider>
         </PageLayout>

@@ -1,9 +1,14 @@
 .description {
     flex: 0 1 40%;
     padding: 2rem;
-    margin: 0;
     background-color: rgba(255, 255, 255, 0.8);
     color: var(--color-blue);
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+.description > p {
+    margin: 0;
 }
 
 .heroButtons {
@@ -18,7 +23,7 @@
 .h1 > h1 {
     color: var(--color-blue);
     margin-top: 0;
-    margin-bottom: 30rem;
+    margin-bottom: 16rem;
 }
 
 @media screen and (max-width: 480px) {
