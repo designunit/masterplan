@@ -14,7 +14,7 @@ export const PageLayout: React.FC<any> = props => {
 
     return (
         <main>
-            <Header
+            {/* <Header
                 isOpen={isOpen}
                 onClickMenu={onClickMenu}
                 menu={(
@@ -22,7 +22,7 @@ export const PageLayout: React.FC<any> = props => {
                         onClick={onClick}
                     />
                 )}
-            />
+            /> */}
             {props.children}
         </main>
     )

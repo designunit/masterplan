@@ -10,7 +10,7 @@ export const Logo: React.SFC<LogoProps> = props => {
 
     return (
         <span className={s.logo} style={props.style}>
-            МАСТЕРПЛАН г.Павлово
+            МАСТЕР-ПЛАН города Павлово
         </span>
     )
 }

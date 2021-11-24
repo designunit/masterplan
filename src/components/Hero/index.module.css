@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 480px) {
     .h1 {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     .h1 > h1 {
         margin-bottom: 4rem;

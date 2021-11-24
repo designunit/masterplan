@@ -14,7 +14,7 @@ export const WhatIs: React.FC = () => {
                 </svg>
                 <div className={s.text}>
                     <Title level={2} style={{ marginBottom: '2rem' }}>
-                        что такое мастерплан?
+                        что такое мастер-план?
                     </Title>
                     <Article>
                         <p>

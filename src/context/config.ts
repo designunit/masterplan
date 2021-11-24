@@ -5,7 +5,7 @@ export type Config = {
 }
 
 export const defaultConfig: Config = {
-    mapUrl: 'https://map.latl.ng/A4XNPDSKXZJ7N4CR',
+    mapUrl: 'https://google.com',
 }
 
 export const ConfigContext = createContext<Config>(defaultConfig)

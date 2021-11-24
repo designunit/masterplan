@@ -3,7 +3,6 @@ import { NextPage } from 'next'
 import { Hero } from 'src/components/Hero'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { Meta, IMeta } from 'src/components/Meta'
-import { About } from 'src/components/About'
 import { PageLayout } from 'src/components/PageLayout'
 import { WhatIs } from 'src/components/WhatIs'
 import React, { useState } from 'react'
@@ -22,7 +21,7 @@ const Index: NextPage<PageProps> = props => {
         >
             <ParallaxProvider>
                 <Head>
-                    <title>Мастерплан г. Павлово</title>
+                    <title>Мастер-план города Павлово</title>
                     {/* <Meta meta={props.meta} /> */}
                 </Head>
     
