@@ -38,6 +38,7 @@ export const Hero: React.FC<any> = ({ openModal }) => {
             </div>
 
             <Flex
+            mobileReverse
                 style={{
                     justifyContent: 'space-between',
                     alignItems: 'flex-end',

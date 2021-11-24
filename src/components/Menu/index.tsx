@@ -12,14 +12,6 @@ export const Menu: React.FC<MenuProps> = ({ onClick }) => {
 
     const buttons = [
         {
-            href: '/#test',
-            text: 'О проекте'
-        },
-        {
-            href: '/#test',
-            text: 'Что Такое мастерплан'
-        },
-        {
             text: 'Карта идей',
             href: '/'
         },

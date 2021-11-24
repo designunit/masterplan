@@ -2,15 +2,15 @@ import { Header } from 'src/components/Header'
 import { useState, useCallback } from 'react'
 import { Menu } from '../Menu'
 
-export const PageLayout: React.FC<any> = props => {    
+export const PageLayout: React.FC<any> = props => {
     const [isOpen, setIsOpen] = useState(false)
     const onClickMenu = useCallback(() => setIsOpen(!isOpen), [isOpen])
-    const onClick = useCallback((i:number) => {
+    const onClick = useCallback((i: number) => {
         setIsOpen(false)
-        if (i == 2) {
+        if (i == 1) {
             props.openModal()
         }
-    },[])
+    }, [])
 
     return (
         <main>
@@ -18,7 +18,7 @@ export const PageLayout: React.FC<any> = props => {
                 isOpen={isOpen}
                 onClickMenu={onClickMenu}
                 menu={(
-                    <Menu 
+                    <Menu
                         onClick={onClick}
                     />
                 )}

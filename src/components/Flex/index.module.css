@@ -6,4 +6,7 @@
     .container {
         flex-direction: column;
     }
+    .mobileReverse {
+        flex-flow: column-reverse;
+    }
 }
