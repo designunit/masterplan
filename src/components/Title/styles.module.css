@@ -2,6 +2,7 @@
     font-family: Coworking;
     align-self: flex-start;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .h1 {
@@ -23,7 +24,6 @@
     font-size: 36px;
     line-height: 32px;
     letter-spacing: 1px;
-    font-weight: 800;
     margin-bottom: 8px;
 }
 

@@ -27,7 +27,6 @@
 .mobileMenu a, .mobileMenu button:not(.closeMenu) {
     font-size: 24px;
     line-height: 2rem;
-    font-weight: 900;
     text-align: start;
     letter-spacing: 2px;
 

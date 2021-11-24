@@ -49,7 +49,7 @@
 .themeRed {
     --color-bg: var(--color-red);
     --color-text: white;
-    --color-border: var(--color-blue);
+    --color-border: white;
     background: var(--color-bg);
     border: 2px solid var(--color-border);
     color: var(--color-text);

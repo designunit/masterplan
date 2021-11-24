@@ -14,7 +14,7 @@ export const Hero: React.FC<any> = ({ openModal }) => {
         <SectionParalaxedBack
             back={(
                 <Image
-                    src='/static/placeholder.jpg'
+                    src='/static/автозаводской.png'
                     layout='fill'
                     objectFit='cover'
                     priority
@@ -27,13 +27,16 @@ export const Hero: React.FC<any> = ({ openModal }) => {
         >
             <div className={s.h1}>
                 <Title>
-                    <span>
+                    <div>
                         Мастер-план
-                    </span>
-                    <br />
-                    <span>
-                        Города Павлово
-                    </span>
+                    </div>
+                    <div style={{ height: 2, }} />
+                    <div>
+                        Автозаводского района
+                    </div>
+                    <div>
+                        Нижнего Новгорода
+                    </div>
                 </Title>
             </div>
 
@@ -42,7 +45,7 @@ export const Hero: React.FC<any> = ({ openModal }) => {
                 style={{
                     justifyContent: 'space-between',
                     alignItems: 'flex-end',
-                    gap: '2rem'
+                    gap: '2rem',
                 }}
             >
                 <div className={s.heroButtons}>
