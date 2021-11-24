@@ -22,8 +22,8 @@ const Index: NextPage<PageProps> = props => {
         >
             <ParallaxProvider>
                 <Head>
-                    <title>ТЫРЫ ПЫРЫ</title>
-                    <Meta meta={props.meta} />
+                    <title>Мастерплан</title>
+                    {/* <Meta meta={props.meta} /> */}
                 </Head>
     
                 <Modal
