@@ -22,7 +22,7 @@ const Index: NextPage<PageProps> = props => {
         >
             <ParallaxProvider>
                 <Head>
-                    <title>Мастерплан</title>
+                    <title>Мастерплан г. Павлово</title>
                     {/* <Meta meta={props.meta} /> */}
                 </Head>
     
