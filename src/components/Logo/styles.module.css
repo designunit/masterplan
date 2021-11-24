@@ -1,0 +1,24 @@
+.logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+
+    text-align: center;
+
+    color: var(--color-red);
+
+    text-decoration: none;
+}
+
+@media screen and (max-width : 1280px) {
+    .logo {
+        text-align: start;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .logo {
+        text-align: center;
+    }
+}
