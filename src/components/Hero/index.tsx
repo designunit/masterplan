@@ -8,13 +8,13 @@ import Image from 'next/image'
 import { Flex } from '../Flex'
 
 export const Hero: React.FC<any> = ({ openModal }) => {
-    const { mapUrl } = useContext(ConfigContext)
+    const { title, mapUrl, bgImage } = useContext(ConfigContext)
 
     return (
         <SectionParalaxedBack
             back={(
                 <Image
-                    src='/static/автозаводской.png'
+                    src={bgImage}
                     layout='fill'
                     objectFit='cover'
                     priority
@@ -30,12 +30,8 @@ export const Hero: React.FC<any> = ({ openModal }) => {
                     <div>
                         Мастер-план
                     </div>
-                    <div style={{ height: 2, }} />
                     <div>
-                        Автозаводского района
-                    </div>
-                    <div>
-                        Нижнего Новгорода
+                        {title}
                     </div>
                 </Title>
             </div>
