@@ -6,25 +6,13 @@ import { YMetrika } from 'src/components/YMetrika'
 import { ConfigContext, defaultConfig } from 'src/context/config'
 import { ControlsContext } from 'src/context/controls'
 import { AppType } from 'next/dist/shared/lib/utils'
-import { useEffect, useState } from 'react'
-import Error from 'next/error'
 
 const App: AppType = (props) => {
     const { Component, pageProps } = props
     const metrika = process.env.YANDEX_METRIKA as string
 
-    const [subdomain, setSubdomain] = useState<boolean | string>(false)
-    useEffect(() => {
-        const windowSub = window.document.location.hostname.split('.')[0]
-        if (['novgorod', 'pavlovo'].includes(windowSub)) {
-            setSubdomain(windowSub)
-        }
-    }, [])
-
-    if (subdomain == false) return <Error statusCode={404} />
-
     return (
-        <ConfigContext.Provider value={defaultConfig[subdomain as string]}>
+        <ConfigContext.Provider value={defaultConfig['pavlovo']}>
             <ControlsContext.Provider
                 value={{
                     shape: 'default',
