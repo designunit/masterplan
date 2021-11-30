@@ -17,7 +17,7 @@ const Index: NextPage<PageProps> = props => {
 
     const { title, bgImage } = useContext(ConfigContext)
 
-    return <Error statusCode={404} />
+    // return <Error statusCode={404} />
     return (
         <PageLayout
             openModal={() => setModalIsOpen(true)}

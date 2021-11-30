@@ -12,7 +12,7 @@ const App: AppType = (props) => {
     const metrika = process.env.YANDEX_METRIKA as string
 
     return (
-        <ConfigContext.Provider value={defaultConfig['pavlovo']}>
+        <ConfigContext.Provider value={defaultConfig['novgorod']}>
             <ControlsContext.Provider
                 value={{
                     shape: 'default',
