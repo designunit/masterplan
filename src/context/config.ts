@@ -8,10 +8,10 @@ export type Config = {
 }
 
 export const defaultConfig: {
-    novgorod: Config
+    avtozavod: Config
     pavlovo: Config
 } = {
-    novgorod: {
+    avtozavod: {
         title: `Автозаводского района\n\rНижнего Новгорода`,
         mapUrl: 'https://mesto.io/THPXJRZPFBG8DKWN',
         bgImage: '/static/автозаводской.png',
@@ -25,4 +25,4 @@ export const defaultConfig: {
     }
 }
 
-export const ConfigContext = createContext<Config>(defaultConfig.novgorod)
+export const ConfigContext = createContext<Config>(defaultConfig.avtozavod)
