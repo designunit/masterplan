@@ -6,6 +6,7 @@ import React, { useContext, useState } from 'react'
 import { ConfigContext } from 'src/context/config'
 import { NextSeo } from 'next-seo'
 import Error from 'next/error'
+import { Modal } from 'src/components/Modal'
 
 interface PageProps {
 
@@ -32,10 +33,10 @@ const Index: NextPage<PageProps> = props => {
                     }}
                 />
 
-                {/* <Modal
+                <Modal
                     modalIsOpen={modalIsOpen}
                     setModalIsOpen={setModalIsOpen}
-                /> */}
+                />
 
                 <Hero
                     openModal={() => setModalIsOpen(true)}

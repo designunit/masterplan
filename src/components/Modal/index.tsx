@@ -1,7 +1,8 @@
 import s from './styles.module.css'
 
 import ReactModal from 'react-modal'
-import React, { useRef, useState } from 'react'
+import React, { useContext } from 'react'
+import { ConfigContext } from 'src/context/config'
 
 export type ModalProps = Omit<ReactModal.Props, 'closeTimeoutMS'>
 
@@ -11,9 +12,7 @@ export const Modal: React.FC<{
 }> = ({ modalIsOpen, setModalIsOpen }) => {
     const delay = 250
 
-    const [state, setState] = useState<'start' | 'form' | 'finish'>('start')
-
-    const refContainer = useRef<HTMLDivElement>(null)
+    const { formSrc } = useContext(ConfigContext)
 
     return (
         <ReactModal
@@ -25,7 +24,11 @@ export const Modal: React.FC<{
             ariaHideApp={false}
         >
             <>
-                тут будет опрос
+                <iframe src={formSrc}
+                    width="100%" height="100%" frameBorder="0"
+                >
+                    Загрузка…
+                </iframe>
                 {/* <OpinionForm
                     showFinish={() => setState('finish')}
                     scrollTop={() => {
