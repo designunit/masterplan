@@ -11,6 +11,7 @@ const App: AppType = (props) => {
     const { Component, pageProps } = props
     const metrika = process.env.YANDEX_METRIKA as string
 
+    // comment to push and redeploy 
     return (
         <ConfigContext.Provider value={defaultConfig['avtozavod']}>
             <ControlsContext.Provider
